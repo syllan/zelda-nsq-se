@@ -4,6 +4,7 @@ map{ id = "enemy_store", description = "Enemy Store" }
 map{ id = "house_store", description = "House Store" }
 map{ id = "intro", description = "Intro" }
 map{ id = "out/outside_store", description = "Outside Store" }
+map{ id = "shell village/tavern", description = "Tavern" }
 
 tileset{ id = "dungeon/blue", description = "Blue dungeon" }
 tileset{ id = "dungeon/brown", description = "Brown dungeon" }
