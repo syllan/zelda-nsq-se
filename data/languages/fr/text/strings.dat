@@ -1,0 +1,88 @@
+text{ key = "dungeon_1.name", value = "Temple de Firone" }
+text{ key = "dungeon_10.name", value = "Temple de Din" }
+text{ key = "dungeon_11.name", value = "Temple de Nayru" }
+text{ key = "dungeon_12.name", value = "Temple de Farore" }
+text{ key = "dungeon_13.name", value = "Temple de Xanto" }
+text{ key = "dungeon_14.name", value = "Temple secret" }
+text{ key = "dungeon_15.name", value = "Tour du Destin" }
+text{ key = "dungeon_2.name", value = "Mine de Ruto" }
+text{ key = "dungeon_3.name", value = "Temple de Latouane" }
+text{ key = "dungeon_4.name", value = "Manoir hanté" }
+text{ key = "dungeon_5.name", value = "Temple d'Ordinn" }
+text{ key = "dungeon_6.name", value = "Colisée des Monstres" }
+text{ key = "dungeon_7.name", value = "Temple de Lanelle" }
+text{ key = "dungeon_8.name", value = "Temple de Zelda" }
+text{ key = "dungeon_9.name", value = "Manoir hanté" }
+text{ key = "options_menu.back", value = "RETOUR" }
+text{ key = "options_menu.language", value = "LANGUE" }
+text{ key = "options_menu.music_volume", value = "MUSIQUE" }
+text{ key = "options_menu.sound_volume", value = "SON" }
+text{ key = "options_menu.title", value = "OPTIONS" }
+text{ key = "pause.commands.action", value = "Action" }
+text{ key = "pause.commands.action_to_configure", value = "Appuie sur Action pour changer cette commande" }
+text{ key = "pause.commands.commands", value = "Commandes" }
+text{ key = "pause.commands.down", value = "Bas" }
+text{ key = "pause.commands.fullscreen", value = "Plein écran" }
+text{ key = "pause.commands.item", value = "Utiliser objet" }
+text{ key = "pause.commands.joypad", value = "Joypad" }
+text{ key = "pause.commands.keyboard", value = "Clavier" }
+text{ key = "pause.commands.left", value = "Gauche" }
+text{ key = "pause.commands.look", value = "Regarder autour" }
+text{ key = "pause.commands.map", value = "Carte" }
+text{ key = "pause.commands.monsters", value = "Monstres vaincus" }
+text{ key = "pause.commands.pause", value = "Pause" }
+text{ key = "pause.commands.press_new_key", value = "Appuie sur la nouvelle touche" }
+text{ key = "pause.commands.right", value = "Droite" }
+text{ key = "pause.commands.run", value = "Courir" }
+text{ key = "pause.commands.save", value = "Sauvegarder" }
+text{ key = "pause.commands.sword", value = "Epée" }
+text{ key = "pause.commands.title", value = "COMMANDES" }
+text{ key = "pause.commands.up", value = "Haut" }
+text{ key = "pause.inventory.crystals", value = "CRISTAUX :" }
+text{ key = "pause.inventory.defense", value = "DEFENSE" }
+text{ key = "pause.inventory.force", value = "FORCE" }
+text{ key = "pause.inventory.life", value = "VIE" }
+text{ key = "pause.inventory.magic", value = "MAGIE" }
+text{ key = "pause.inventory.status", value = "STATUT :" }
+text{ key = "pause.inventory.time", value = "TEMPS" }
+text{ key = "pause.monsters.title", value = "MONSTRES" }
+text{ key = "records_menu.100_percent_rank", value = "RANG DES 100%" }
+text{ key = "records_menu.back", value = "RETOUR" }
+text{ key = "records_menu.best_time", value = "MEILLEUR TEMPS :" }
+text{ key = "records_menu.clear", value = "EFFACER" }
+text{ key = "records_menu.clear_question", value = "EFFACER ?" }
+text{ key = "records_menu.no", value = "NON" }
+text{ key = "records_menu.rank_100_percent", value = "RANG : Héros d'Hyrule$Finir le jeu à 100%." }
+text{ key = "records_menu.rank_speed", value = "RANG : Marathonien d'Hyrule$Finir le jeu en moins de$deux heures." }
+text{ key = "records_menu.rank_ultimate", value = "RANG : Frimeur$Finir le jeu sans mourir,$avec 10 coeurs au maximum,$sans parler aux Grandes Fées,$sans acheter de flacons$et sans prendre le bouclier." }
+text{ key = "records_menu.speed_rank", value = "RANG DE RAPIDITE" }
+text{ key = "records_menu.title", value = "RECORDS" }
+text{ key = "records_menu.ultimate_rank", value = "RANG ULTIME" }
+text{ key = "records_menu.yes", value = "OUI" }
+text{ key = "savegames_menu.cancel", value = "ANNULER" }
+text{ key = "savegames_menu.delete", value = "EFFACER" }
+text{ key = "savegames_menu.delete_question", value = "EFFACER ?" }
+text{ key = "savegames_menu.load", value = "CHARGER" }
+text{ key = "savegames_menu.no", value = "NON" }
+text{ key = "savegames_menu.options", value = "OPTIONS" }
+text{ key = "savegames_menu.records", value = "RECORDS" }
+text{ key = "savegames_menu.title", value = "ECRAN DE SELECTION" }
+text{ key = "savegames_menu.yes", value = "OUI" }
+text{ key = "stats_menu.death_count", value = "Mort $v fois" }
+text{ key = "stats_menu.game_time", value = "Temps de jeu :" }
+text{ key = "stats_menu.items", value = "Objets :" }
+text{ key = "stats_menu.monsters", value = "Types d'ennemis vaincus :" }
+text{ key = "stats_menu.percent", value = "Tu as fini ce jeu à $v%, félicitations !" }
+text{ key = "stats_menu.pieces_of_heart", value = "Quarts de coeur :" }
+text{ key = "stats_menu.rank", value = "RANG :" }
+text{ key = "stats_menu.rank.completion.1", value = "Héros d'Hyrule" }
+text{ key = "stats_menu.rank.completion.2", value = "Perfectionniste" }
+text{ key = "stats_menu.rank.completion.3", value = "Fan de Zelda" }
+text{ key = "stats_menu.rank.completion.4", value = "Pro du clavier" }
+text{ key = "stats_menu.rank.completion.5", value = "Confirmé" }
+text{ key = "stats_menu.rank.completion.6", value = "Débutant" }
+text{ key = "stats_menu.rank.death.1", value = "Mort-vivant" }
+text{ key = "stats_menu.rank.death.2", value = "Kamikaze" }
+text{ key = "stats_menu.rank.speed", value = "Marathonien d'Hyrule" }
+text{ key = "stats_menu.rank.ultimate", value = "Frimeur" }
+text{ key = "stats_menu.title", value = "SCORES :" }

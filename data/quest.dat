@@ -1,0 +1,16 @@
+quest{
+  solarus_version = "1.6",
+  write_dir = "zelda_nsq_se",
+  title = "Zelda Navi's Quest SE",
+  short_description = "Remake of the game from Vincent Jouillat",
+  long_description = [[
+Solarus remake of Vincent Jouillat's 4th game, Zelda Navi's Quest.]],
+  author = "",
+  quest_version = "1.0",
+  release_date = "",
+  website = "",
+  normal_quest_size = "320x240",
+  min_quest_size = "320x240",
+  max_quest_size = "320x240",
+}
+
