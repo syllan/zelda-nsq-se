@@ -1,3 +1,6 @@
+
+[![Join the chat at https://gitter.im/syllan/zelda-nsq-se](https://badges.gitter.im/syllan/zelda-nsq-se.svg)](https://gitter.im/syllan/zelda-nsq-se?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ![Zelda Navi's Quest logo](data/logos/logo.png)
 
 # Zelda Navi's Quest
