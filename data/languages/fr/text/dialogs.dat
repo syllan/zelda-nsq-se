@@ -705,47 +705,60 @@ Est-ce que tu es prêt ?
 dialog{
   id = "intro.fresco_1",
   text = [[
-Après la défaite de Ganon et la
-disparition de la Triforce, la légende
-laisse croire que la paix dura...
-
-Mais derrière chaque légende se cache
-souvent une plus sombre réalité...
+Le Royaume d'Hyrule était en paix depuis
+que son Héros, Link, avait triomphé des
+forces maléfiques qui le menaçaient.
 ]]
 }
 
 dialog{
   id = "intro.fresco_2",
   text = [[
-La légende oublie qu'à la suite de ces
-évènements son héros fut frappé par une
-terrible malédiction...
+Sa quête achevée, il partit fuir la
+célébrité et étancher sa soif d'aventure
+par-delà les mers, à la recherche de
+
+terres inconnues.
 ]]
 }
 
 dialog{
   id = "intro.fresco_3",
   text = [[
-Jour après jour, Link se transformait en
-un monstre au pouvoir destructeur
-incontrôlable surnommé Oni-Link...
+Ses voyages lui firent découvrir de
+nombreux royaumes, mais c'est une simple
+rumeur, entendue dans un bar où il
+
+passait par erreur, qui finit par
+retenir toute son attention...
 ]]
 }
 
 dialog{
   id = "intro.fresco_4",
   text = [[
-Banni d'Hyrule, Link demanda conseil à
-la Princesse Zelda.
+On lui parla d'un lieu légendaire, la
+destination balnéaire la plus en vogue
+du moment, la célèbre île des fées.
 ]]
 }
 
 dialog{
   id = "intro.fresco_5",
   text = [[
-Cette dernière lui indiqua son tout
-dernier espoir : un portail vers un
-monde secret...
+Ce fut sans doute son instinct de Héros
+qui lui fit se douter de ce qu'il s'y
+tramait, car il se hâta de prendre la
+
+mer vers cette mystérieuse destination.
+]]
+}
+
+dialog{
+  id = "intro.fresco_6",
+  text = [[
+Mais à peine l'île en vue, Link fut
+vaincu par un terrifiant monstre marin.
 ]]
 }
 

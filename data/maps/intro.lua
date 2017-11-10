@@ -26,7 +26,7 @@ bg2_movement:start(bg2_xy)
 
 -- Frescos.
 local frescos = {}
-for i = 1, 5 do
+for i = 1, 6 do
   frescos[i] = sol.surface.create("menus/intro/intro" .. i .. ".png")
   frescos[i]:set_xy(0, 16)
 end
@@ -63,11 +63,9 @@ local function next_fresco()
     -- Restore usual settings.
     game:get_dialog_box():set_style("box")
     game:get_dialog_box():set_position("bottom")
-    game:start_dialog("intro.arriving_portal_cave", function()
-      hero:unfreeze()
-      -- Go to the first map.
-      hero:teleport("caves/portal_cave", "from_intro")
-    end)
+    hero:unfreeze()
+    -- Go to the first map.
+    hero:teleport("dungeons/1/1f") -- TODO change the first map
   end
 end
 

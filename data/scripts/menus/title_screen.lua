@@ -5,7 +5,7 @@ local logo_img = sol.surface.create("menus/title_logo.png")
 
 function title_screen:on_started()
 
-  sol.audio.play_music("title_screen")
+  sol.audio.play_music("Titre")
 end
 
 function title_screen:on_draw(dst_surface)
