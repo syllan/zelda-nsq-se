@@ -1,4 +1,5 @@
 map{ id = "caves/cave_store", description = "Cave Store" }
+map{ id = "dungeons/1/1f", description = "Dungeon 1 1F" }
 map{ id = "dungeons/1/store", description = "Dungeon 1 Store" }
 map{ id = "enemy_store", description = "Enemy Store" }
 map{ id = "house_store", description = "House Store" }
