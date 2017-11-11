@@ -143,6 +143,20 @@ animation{
   },
 }
 animation{
+  name = "cane_of_byrna",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 352, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "cane_of_somaria",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 336, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "compass",
   src_image = "entities/items.png",
   directions = {
@@ -256,6 +270,13 @@ animation{
   },
 }
 animation{
+  name = "invisibility_cloak",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 240, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "lamp",
   src_image = "entities/items.png",
   directions = {
@@ -286,6 +307,13 @@ animation{
   },
 }
 animation{
+  name = "moon_pearl",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 272, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "mudora_book",
   src_image = "entities/items.png",
   directions = {
@@ -297,6 +325,13 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 208, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "ocarina",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 416, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{

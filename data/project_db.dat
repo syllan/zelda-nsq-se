@@ -183,6 +183,7 @@ sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
 sprite{ id = "entities/snores", description = "Snoring (zzz)" }
+sprite{ id = "entities/somaria_block", description = "Somaria block" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
 sprite{ id = "entities/stone_black", description = "Stone (black)" }
@@ -463,6 +464,8 @@ item{ id = "bottle_3", description = "Bottle 3" }
 item{ id = "bottle_4", description = "Bottle 4" }
 item{ id = "bow", description = "Bow" }
 item{ id = "bow_silver", description = "Silver bow" }
+item{ id = "cane_of_byrna", description = "Cane of Byrna" }
+item{ id = "cane_of_somaria", description = "Cane of Somaria" }
 item{ id = "compass", description = "Dungeon compass" }
 item{ id = "din_medallion", description = "Din medallion" }
 item{ id = "farore_medallion", description = "Farore medallion" }
@@ -475,6 +478,7 @@ item{ id = "heart", description = "Heart (x1)" }
 item{ id = "heart_container", description = "Heart container" }
 item{ id = "hookshot", description = "Hookshot" }
 item{ id = "ice_rod", description = "Ice rod" }
+item{ id = "invisibility_cloak", description = "Invisibility cloak" }
 item{ id = "lamp", description = "Lamp" }
 item{ id = "magic_bar", description = "Maximum of magic (none / half / full)" }
 item{ id = "magic_flask", description = "Magic flask (small / big)" }
@@ -482,6 +486,7 @@ item{ id = "map", description = "Dungeon map" }
 item{ id = "monsters_encyclopedia", description = "Monsters Encyclopedia" }
 item{ id = "mudora_book", description = "Mudora's book" }
 item{ id = "nayru_medallion", description = "Nayru medallion" }
+item{ id = "ocarina", description = "ocarina" }
 item{ id = "pegasus_shoes", description = "Pegasus shoes" }
 item{ id = "piece_of_heart", description = "Piece of heart" }
 item{ id = "random", description = "Random" }
