@@ -35,17 +35,18 @@ function hero_meta:on_taking_damage(damage)
   -- In the parameter, the damage unit is 1/2 of a heart.
   local game = self:get_game()
   local defense = self:get_defense()
+  local life_to_remove
   if defense <= 0 then
     -- Multiply the damage by two if the hero has no defense at all.
-    damage = damage * 2
+    life_to_remove = damage * 2
   else
-    damage = math.floor(damage / defense)
-    if damage <= 0 then
-      damage = 1
+    life_to_remove = math.floor(damage / defense)
+    if life_to_remove <= 0 and damage > 0 then
+      life_to_remove = 1
     end
   end
 
-  game:remove_life(damage)
+  game:remove_life(life_to_remove)
 
   -- Increase anger
   game:add_anger(1)  -- TODO check if it is always 1
@@ -72,6 +73,42 @@ hero_meta:register_event("on_position_changed", function(hero)
   local room = row * num_columns + column + 1
 
   game:set_explored_dungeon_room(nil, nil, room)
+end)
+
+-- Send the hero to lower floors when falling in a hole.
+hero_meta:register_event("on_state_changed", function(hero, state)
+
+  local map = hero:get_map()
+  local game = map:get_game()
+
+  if state == "falling" then
+    hero.life_before_falling = game:get_life()
+  end
+
+  -- TODO check how much life is lost in the original game in normal holes
+
+  if state == "back to solid ground" and
+      hero:get_previous_state() == "falling" then
+    local dungeon_index = game:get_dungeon_index()
+    local floor = map:get_floor()
+    if dungeon_index ~= nil and
+        floor ~= nil and
+        floor > game:get_dungeon_lowest_floor(dungeon_index) then
+      local next_floor = floor - 1
+      local destination_map_id = "dungeons/" .. dungeon_index .. "/" .. game:get_floor_name(next_floor)
+      game:set_life(hero.life_before_falling)  -- Cancel removing life points after falling.
+      hero:teleport(destination_map_id, "_same")
+    end
+  end
+end)
+
+function hero_meta:get_previous_state()
+  return self.previous_state
+end
+
+hero_meta:register_event("on_state_changed", function(hero, state)
+  -- Should be done after other on_state_changed() events.
+  hero.previous_state = state
 end)
 
 return true

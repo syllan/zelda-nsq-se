@@ -119,6 +119,9 @@ local function initialize_dungeon_features(game)
       highest_floor = 2,
       -- No boss on the minimap (the boss is on the roof).
     },
+    [13] = {
+      -- TODO
+    },
   }
 
   -- Returns the index of the current dungeon if any, or nil.
@@ -189,13 +192,20 @@ local function initialize_dungeon_features(game)
     return map_ids
   end
 
-  function game:get_floor_name(floor)
+  function game:get_dungeon_lowest_floor(dungeon_index)
 
-    if floor >= 0 then
-      return (floor + 1) .. "f"
-    else
-      return "b" .. (-floor)
-    end
+    dungeon_index = dungeon_index or game:get_dungeon_index()
+    local dungeon = game:get_dungeon(dungeon_index)
+    assert(dungeon ~= nil)
+    return dungeon.lowest_floor
+  end
+
+  function game:get_dungeon_highest_floor(dungeon_index)
+
+    dungeon_index = dungeon_index or game:get_dungeon_index()
+    local dungeon = game:get_dungeon(dungeon_index)
+    assert(dungeon ~= nil)
+    return dungeon.highest_floor
   end
 
   function game:get_dungeon_room_size(dungeon_index)
@@ -268,14 +278,10 @@ local function initialize_dungeon_features(game)
     dungeon.merged_rooms[floor] = dungeon.merged_rooms[floor] or compute_merged_rooms(game, dungeon_index, floor)
     room = dungeon.merged_rooms[floor][room] or room
 
-    local room_name
-    if floor >= 0 then
-      room_name = tostring(floor + 1) .. "f_" .. room
-    else
-      room_name = math.abs(floor) .. "b_" .. room
-    end
+    local floor_name = game:get_floor_name(floor)
+    local room_name = floor_name .. "_" .. room
 
-    return "dungeon_" .. dungeon_index .. "_explored_" .. room_name
+    return "d" .. dungeon_index .. "_explored_" .. room_name
   end
 
   -- Returns whether a dungeon room has been explored.
@@ -300,6 +306,21 @@ local function initialize_dungeon_features(game)
       self:get_explored_dungeon_room_variable(dungeon_index, floor, room),
       explored
     )
+  end
+
+  function game:get_floor_name(floor)
+
+    local map = game:get_map()
+    floor = floor or tonumber(map:get_floor())
+    if floor == nil then
+      return nil
+    end
+
+    if floor >= 0 then
+      return (floor + 1) .. "f"
+    else
+      return "b" .. (-floor)
+    end
   end
 
   -- Show the dungeon name when entering a dungeon.
