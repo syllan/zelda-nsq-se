@@ -27,11 +27,6 @@ function enemy_meta:on_removed()
     local breed = self:get_breed()
     game:get_item("monsters_encyclopedia"):add_monster_type_killed(breed)
   end
-
-  -- Decrease anger when Oni-Link.
-  if game:is_onilink() then
-    game:remove_anger(1)
-  end
 end
 
 -- Helper function to inflict an explicit reaction from a scripted weapon.
