@@ -18,6 +18,10 @@ function rupees_builder:new(game, config)
   local dst_x, dst_y = config.x, config.y
 
   function rupees:on_draw(dst_surface)
+    -- Don't show the counter before the player has the rupees bag.
+    if game:get_max_money() == 0 then
+      return
+    end
 
     local x, y = dst_x, dst_y
     local width, height = dst_surface:get_size()

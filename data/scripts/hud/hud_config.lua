@@ -76,12 +76,8 @@ local hud_config = {
     y = 40,
   },
 
-  -- Anger bar.
-  {
-    menu_script = "scripts/hud/anger_bar",
-    x = 10,
-    y = 13,
-  },
+  -- Navi bar.
+  -- TODO
 
 }
 

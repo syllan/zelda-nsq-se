@@ -13,7 +13,7 @@ local initial_game = {}
 function initial_game:initialize_new_savegame(game)
 
   game:set_starting_location("intro")
-  game:set_max_money(999)  -- TODO check this
+  game:set_max_money(0)
   game:set_max_life(6)
   game:set_life(game:get_max_life())
   game:get_item("tunic"):set_variant(1)

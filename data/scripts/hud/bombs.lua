@@ -19,6 +19,10 @@ function bombs_builder:new(game, config)
   local dst_x, dst_y = config.x, config.y
 
   function bombs:on_draw(dst_surface)
+    -- Don't show the counter before the player has the bombs.
+    if not bombs_counter:has_variant() then
+      return
+    end
 
     local x, y = dst_x, dst_y
     local width, height = dst_surface:get_size()

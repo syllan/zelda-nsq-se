@@ -64,6 +64,7 @@ local function next_fresco()
     game:get_dialog_box():set_style("box")
     game:get_dialog_box():set_position("bottom")
     hero:unfreeze()
+    game:set_hud_enabled(true)
     -- Go to the first map.
     hero:teleport("dungeons/1/1f") -- TODO change the first map
   end
