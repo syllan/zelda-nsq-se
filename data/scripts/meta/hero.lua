@@ -39,9 +39,6 @@ function hero_meta:on_taking_damage(damage)
   end
 
   game:remove_life(life_to_remove)
-
-  -- Increase anger
-  game:add_anger(1)  -- TODO check if it is always 1
 end
 
 -- Detect the position of the hero to mark visited rooms in dungeons.
