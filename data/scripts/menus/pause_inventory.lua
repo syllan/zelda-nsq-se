@@ -3,21 +3,25 @@ local inventory_manager = {}
 local gui_designer = require("scripts/menus/lib/gui_designer")
 
 local item_names = {
-  -- Names of up to 12 items to show in the inventory.
+  -- Names of up to 16 items to show in the inventory.
   "bow",  -- Will be replaced by the silver one if the player has it.
+  "boomerang",
   "hookshot",
   "bombs_counter",
   "fire_rod",
   "ice_rod",
   "lamp",
+  "invisibility_cloak",
   "hammer",
-  "flippers",
-  "glove",
+  "ocarina",
+  "cane_of_somaria",
+  "cane_of_byrna",
   "bottle_1",
   "bottle_2",
   "bottle_3",
+  "bottle_4",
 }
-local items_num_columns = 3
+local items_num_columns = 4
 local items_num_rows = math.ceil(#item_names / items_num_columns)
 
 local icons_img = sol.surface.create("menus/icons.png")
@@ -27,7 +31,7 @@ local movement_speed = 800
 local movement_distance = 160
 
 local function create_item_widget(game)
-  local widget = gui_designer:create(112, 144)
+  local widget = gui_designer:create(144, 144)
   widget:set_xy(16 - movement_distance, 16)
   widget:make_green_frame()
   local items_surface = widget:get_surface()
@@ -54,53 +58,32 @@ local function create_item_widget(game)
 end
 
 local function create_status_widget(game)
-  local widget = gui_designer:create(160, 144)
+  local widget = gui_designer:create(128, 144)
   local sword = game:get_item("sword"):get_variant()
   local shield = game:get_item("shield"):get_variant()
   local force = game:get_value("force")
   local defense = game:get_value("defense")
   local life = game:get_life() .. "/" .. game:get_max_life()
   local magic = game:get_magic() .. "/" .. game:get_max_magic()
-  widget:set_xy(144, 16 - movement_distance)
+  widget:set_xy(176, 16 - movement_distance)
   widget:make_green_frame()
-  widget:make_text(sol.language.get_string("pause.inventory.status"), 5, 4, "left")
-  widget:make_text(sol.language.get_string("pause.inventory.life"), 5, 28, "left")
-  widget:make_text(": " .. life, 65, 28, "left")
-  widget:make_text(sol.language.get_string("pause.inventory.magic"), 5, 44, "left")
-  widget:make_text(": " .. magic, 65, 44, "left")
-  widget:make_text(sol.language.get_string("pause.inventory.force"), 5, 60, "left")
-  widget:make_text(": " .. force, 65, 60, "left")
-  widget:make_text(sol.language.get_string("pause.inventory.defense"), 5, 76, "left")
-  widget:make_text(": " .. defense, 65, 76, "left")
-  widget:make_text(sol.language.get_string("pause.inventory.time"), 5, 92, "left")
-
-  if sword > 0 then
-    widget:make_image_region(items_img, 528, 32 + 16 * sword, 16, 16, 12, 120)
-  end
-  if shield > 0 then
-    widget:make_image_region(items_img, 544, 32 + 16 * shield, 16, 16, 36, 120)
-  end
-  if game:has_item("din_medallion") then
-    widget:make_image_region(items_img, 176, 0, 16, 16, 60, 120)
-  end
-  if game:has_item("farore_medallion") then
-    widget:make_image_region(items_img, 192, 0, 16, 16, 84, 120)
-  end
-  if game:has_item("nayru_medallion") then
-    widget:make_image_region(items_img, 208, 0, 16, 16, 108, 120)
-  end
-  if game:has_item("mudora_book") then
-    widget:make_image_region(items_img, 160, 0, 16, 16, 132, 120)
-  end
+  -- TODO
   return widget
 end
 
-local function create_crystals_widget(game)
-
-  local widget = gui_designer:create(224, 48)
-  widget:set_xy(16, 176 + movement_distance)
+local function create_force_gems_widget(game)
+  local widget = gui_designer:create(48, 48)
+  widget:set_xy(16 - movement_distance, 176)
   widget:make_green_frame()
-  widget:make_text(sol.language.get_string("pause.inventory.crystals"), 5, 4, "left")
+  -- TODO
+  return widget
+end
+
+local function create_medallions_widget(game)
+
+  local widget = gui_designer:create(160, 48)
+  widget:set_xy(80, 176 + movement_distance)
+  widget:make_green_frame()
 
   for i = 1, 7 do
     local src_x, src_y
@@ -109,7 +92,7 @@ local function create_crystals_widget(game)
     else
       src_x, src_y = 16, 16
     end
-    widget:make_image_region(icons_img, src_x, src_y, 16, 16, -13 + 29 * i, 22)
+    widget:make_image_region(icons_img, src_x, src_y, 16, 16, -16 + 22 * i, 16)
   end
 
   return widget
@@ -133,7 +116,8 @@ function inventory_manager:new(game)
 
   local item_widget = create_item_widget(game)
   local status_widget = create_status_widget(game)
-  local crystals_widget = create_crystals_widget(game)
+  local force_gems_widget = create_force_gems_widget(game)
+  local medallions_widget = create_medallions_widget(game)
   local pieces_of_heart_widget = create_pieces_of_heart_widget(game)
 
   local item_cursor_fixed_sprite = sol.sprite.create("menus/item_cursor")
@@ -180,8 +164,14 @@ function inventory_manager:new(game)
     local movement = sol.movement.create("straight")
     movement:set_speed(movement_speed)
     movement:set_max_distance(movement_distance)
+    movement:set_angle(0 + angle_added)
+    force_gems_widget:start_movement(movement)
+
+    local movement = sol.movement.create("straight")
+    movement:set_speed(movement_speed)
+    movement:set_max_distance(movement_distance)
     movement:set_angle(math.pi / 2 + angle_added)
-    crystals_widget:start_movement(movement)
+    medallions_widget:start_movement(movement)
 
     local movement = sol.movement.create("straight")
     movement:set_speed(movement_speed)
@@ -189,20 +179,6 @@ function inventory_manager:new(game)
     movement:set_angle(math.pi + angle_added)
     pieces_of_heart_widget:start_movement(movement)
 
-  end
-
-  local time_played_text = sol.text_surface.create{
-    font = "alttp",
-    horizontal_alignment = "left",
-    vertical_alignment = "top",
-  }
-
-  -- Draws the time played on the status widget.
-  local function draw_time_played(dst_surface)
-    local time_string = game:get_time_played_string()
-    time_played_text:set_text(": " .. time_string)
-    local status_x, status_y = status_widget:get_xy()
-    time_played_text:draw(dst_surface, status_x + 65, status_y + 92)
   end
 
   local cursor_index = game:get_value("pause_inventory_last_item_index") or 0
@@ -249,11 +225,9 @@ function inventory_manager:new(game)
 
     item_widget:draw(dst_surface)
     status_widget:draw(dst_surface)
-    crystals_widget:draw(dst_surface)
+    force_gems_widget:draw(dst_surface)
+    medallions_widget:draw(dst_surface)
     pieces_of_heart_widget:draw(dst_surface)
-
-    -- Show the time played.
-    draw_time_played(dst_surface)
 
     -- Show the item cursors.
     draw_item_cursors(dst_surface)
