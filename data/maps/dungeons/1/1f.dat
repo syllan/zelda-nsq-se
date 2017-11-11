@@ -15359,6 +15359,7 @@ enemy{
 }
 
 separator{
+  name = "auto_separator_4",
   layer = 2,
   x = 0,
   y = 232,
@@ -15367,6 +15368,7 @@ separator{
 }
 
 separator{
+  name = "auto_separator_2",
   layer = 2,
   x = 0,
   y = 712,
@@ -15375,6 +15377,7 @@ separator{
 }
 
 separator{
+  name = "auto_separator_1",
   layer = 2,
   x = 0,
   y = 952,
@@ -15383,6 +15386,7 @@ separator{
 }
 
 separator{
+  name = "auto_separator_5",
   layer = 2,
   x = 312,
   y = 0,
@@ -15391,6 +15395,7 @@ separator{
 }
 
 separator{
+  name = "auto_separator_10",
   layer = 2,
   x = 1272,
   y = 0,
@@ -15399,6 +15404,7 @@ separator{
 }
 
 separator{
+  name = "auto_separator_7",
   layer = 2,
   x = 632,
   y = 720,
@@ -15407,14 +15413,16 @@ separator{
 }
 
 separator{
+  name = "auto_separator_8",
   layer = 2,
   x = 952,
-  y = 728,
+  y = 720,
   width = 16,
   height = 480,
 }
 
 separator{
+  name = "auto_separator_6",
   layer = 2,
   x = 632,
   y = 0,
@@ -15423,6 +15431,7 @@ separator{
 }
 
 separator{
+  name = "auto_separator_9",
   layer = 2,
   x = 952,
   y = 0,
@@ -15431,6 +15440,7 @@ separator{
 }
 
 separator{
+  name = "auto_separator_3",
   layer = 2,
   x = 0,
   y = 472,
@@ -15439,6 +15449,7 @@ separator{
 }
 
 separator{
+  name = "auto_separator_11",
   layer = 2,
   x = 1272,
   y = 960,
@@ -15582,6 +15593,36 @@ dynamic_tile{
   y = 928,
   pattern = "24",
   width = 8,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 1272,
+  y = 752,
+  pattern = "576",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 792,
+  y = 96,
+  pattern = "581",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 472,
+  y = 1072,
+  pattern = "576",
+  width = 16,
   height = 16,
   enabled_at_start = false,
 }

@@ -4504,3 +4504,43 @@ custom_entity{
   model = "hookable",
 }
 
+dynamic_tile{
+  layer = 2,
+  x = 16,
+  y = 1152,
+  pattern = "576",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 40,
+  y = 1152,
+  pattern = "581",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 64,
+  y = 1152,
+  pattern = "570",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 88,
+  y = 1152,
+  pattern = "571",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
