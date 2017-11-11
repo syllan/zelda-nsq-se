@@ -495,61 +495,7 @@ dialog{
   text = [[
                    Niveau 1
 
-               Temple de Firone
-]]
-}
-
-dialog{
-  id = "dungeons.10.welcome",
-  text = [[
-                   Niveau 1
-
-                 Temple de Din
-]]
-}
-
-dialog{
-  id = "dungeons.11.welcome",
-  text = [[
-                   Niveau 1
-
-                Temple de Nayru
-]]
-}
-
-dialog{
-  id = "dungeons.12.welcome",
-  text = [[
-                   Niveau 12
-
-                Temple de Farore
-]]
-}
-
-dialog{
-  id = "dungeons.13.welcome",
-  text = [[
-                   Niveau 13
-
-                Temple de Xanto
-]]
-}
-
-dialog{
-  id = "dungeons.14.welcome",
-  text = [[
-                   Niveau ?
-
-                 Temple secret
-]]
-}
-
-dialog{
-  id = "dungeons.15.welcome",
-  text = [[
-                 Niveau Final
-
-                Tour du Destin
+              Temple de la Jungle
 ]]
 }
 
@@ -558,7 +504,7 @@ dialog{
   text = [[
                    Niveau 2
 
-                 Mine de Ruto
+              Temple de la Terre
 ]]
 }
 
@@ -567,7 +513,7 @@ dialog{
   text = [[
                    Niveau 3
 
-              Temple de Latouane
+               Temple du Désert
 ]]
 }
 
@@ -576,7 +522,7 @@ dialog{
   text = [[
                    Niveau 4
 
-                 Manoir hanté
+                Temple du Lagon
 ]]
 }
 
@@ -585,16 +531,16 @@ dialog{
   text = [[
                    Niveau 5
 
-               Temple d'Ordinn
+                 Temple du Feu
 ]]
 }
 
 dialog{
   id = "dungeons.6.welcome",
   text = [[
-                   Niveau 1
+                   Niveau 6
 
-             Colisée des Monstres
+               Temple de l'Ombre
 ]]
 }
 
@@ -603,25 +549,25 @@ dialog{
   text = [[
                    Niveau 7
 
-               Temple de Lanelle
+              Temple de la Glace
 ]]
 }
 
 dialog{
   id = "dungeons.8.welcome",
   text = [[
-                   Niveau 8
+                 Niveau Secret
 
-                Temple de Zelda
+          Temple de la Reine des Fées
 ]]
 }
 
 dialog{
   id = "dungeons.9.welcome",
   text = [[
-                   Niveau 9
+                 Niveau Final
 
-                 Manoir hanté
+              Sanctuaire des Fées
 ]]
 }
 
@@ -766,23 +712,6 @@ dialog{
   id = "not_enough_money",
   text = [[
 Désolé, mais tu n'as pas assez de rubis.
-]]
-}
-
-dialog{
-  id = "onilink_tutorial",
-  text = [[
-Tutoriel : lorsque la jauge de colère est
-pleine, tu te transformes en Oni-Link.
-Ton allonge et ta force augmentent alors que ta
-défense diminue.
-En Oni-Link, tu ne peux plus utiliser les objets
-équipables, mais tu peux te téléporter à
-l'entrée lorsque tu es dans un donjon en
-appuyant sur T.
-A chaque ennemi vaincu par Oni-Link, ta jauge
-diminue. Une fois vide, Link reprend sa forme
-normale.
 ]]
 }
 
