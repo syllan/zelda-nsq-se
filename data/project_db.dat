@@ -460,6 +460,7 @@ item{ id = "boss_key", description = "Dungeon boss key" }
 item{ id = "bottle_1", description = "Bottle 1" }
 item{ id = "bottle_2", description = "Bottle 2" }
 item{ id = "bottle_3", description = "Bottle 3" }
+item{ id = "bottle_4", description = "Bottle 4" }
 item{ id = "bow", description = "Bow" }
 item{ id = "bow_silver", description = "Silver bow" }
 item{ id = "compass", description = "Dungeon compass" }
@@ -468,7 +469,6 @@ item{ id = "farore_medallion", description = "Farore medallion" }
 item{ id = "fire_rod", description = "Fire rod" }
 item{ id = "flippers", description = "Flippers" }
 item{ id = "glove", description = "Iron glove / Golden glove" }
-item{ id = "graal", description = "Graal" }
 item{ id = "green_potion", description = "Green potion" }
 item{ id = "hammer", description = "Magic hammer" }
 item{ id = "heart", description = "Heart (x1)" }

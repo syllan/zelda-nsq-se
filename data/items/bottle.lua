@@ -6,6 +6,10 @@ return function(item)
   -- 2: red potion
   -- 3: green potion
   -- 4: blue potion
+  -- 5: yellow potion
+  -- 6: orange potion
+  -- 7: purple potion
+  -- 8: grey potion
 
   local function drink_potion(variant)
 
@@ -30,11 +34,17 @@ return function(item)
 
     function potion_sprite:on_animation_finished()
 
-      if variant == 2 or variant == 4 then
+      if variant == 2 or variant == 4 or variant == 6 or variant == 8 then
         game:add_life(game:get_max_life())
       end
-      if variant == 3 or variant == 4 then
+      if variant == 3 or variant == 4 or variant == 7 or variant == 8 then
         game:add_magic(game:get_max_magic())
+      end
+      if variant == 5 or variant == 6 or variant == 7 or variant == 8 then
+        -- TODO game:add_navi(game:get_max_navi())
+      end
+      if variant == 8 then
+        -- TODO max bombs and max arrows
       end
       item:set_variant(1)
       potion:remove()
@@ -74,6 +84,46 @@ return function(item)
     elseif variant == 4 then
       if game:get_life() >= game:get_max_life() and
           game:get_magic() >= game:get_max_magic() then
+        game:start_dialog("potion_not_needed")
+      else
+        drink_potion(variant)
+      end
+      item:set_finished()
+
+      -- yellow potion
+    elseif variant == 5 then
+    --  if game:get_navi() >= game:get_max_navi() then
+    --    game:start_dialog("potion_not_needed")
+    --  else
+        drink_potion(variant)
+    --  end
+      item:set_finished()
+
+      -- orange potion
+    elseif variant == 6 then
+      if game:get_life() >= game:get_max_life() then --and
+          -- game:get_navi() >= game:get_max_navi() then
+        game:start_dialog("potion_not_needed")
+      else
+        drink_potion(variant)
+      end
+      item:set_finished()
+
+      -- purple potion
+    elseif variant == 7 then
+      if game:get_magic() >= game:get_max_magic() then --and
+          -- game:get_navi() >= game:get_max_navi() then
+        game:start_dialog("potion_not_needed")
+      else
+        drink_potion(variant)
+      end
+      item:set_finished()
+
+      -- grey potion
+    elseif variant == 8 then
+      if game:get_life() >= game:get_max_life() and
+          game:get_magic() >= game:get_max_magic() then --and
+          -- game:get_navi() >= game:get_max_navi() then
         game:start_dialog("potion_not_needed")
       else
         drink_potion(variant)
