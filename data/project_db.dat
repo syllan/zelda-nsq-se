@@ -8,6 +8,13 @@ map{ id = "house_store", description = "House Store" }
 map{ id = "intro", description = "Intro" }
 map{ id = "out/outside_store", description = "Outside Store" }
 map{ id = "shell village/tavern", description = "Tavern" }
+map{ id = "shell_village/boy_house", description = "Boy house" }
+map{ id = "shell_village/chest_game", description = "Chest game" }
+map{ id = "shell_village/leader_house", description = "Leader's house" }
+map{ id = "shell_village/man_house", description = "Man house" }
+map{ id = "shell_village/shop_1", description = "Shop 1" }
+map{ id = "shell_village/shop_2", description = "Shop 2" }
+map{ id = "shell_village/soldier_house", description = "Soldier's house" }
 map{ id = "shell_village/tavern", description = "Tavern" }
 
 tileset{ id = "dungeon/blue", description = "Blue dungeon" }
