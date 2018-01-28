@@ -15,26 +15,26 @@ local function initialize_dungeon_features(game)
   -- Define the existing dungeons and their floors for the minimap menu.
   local dungeons_info = {
     [1] = {
-      lowest_floor = -1,
-      highest_floor = 0,
-      boss = {
-        floor = 0,
-        x = 640 + 1440,
-        y = 720 + 365,
-        savegame_variable = "d1_boss",
-      },
-    },
-    [2] = {
       lowest_floor = -2,
       highest_floor = 0,
       boss = {
-        floor = -2,  -- TODO
+        floor = -2,
+        x = 640 + 1440, --TODO
+        y = 720 + 365, --TODO
+        savegame_variable = "d1_boss",
+      },
+    },
+    [2] = { --TODO
+      lowest_floor = -2,
+      highest_floor = 0,
+      boss = {
+        floor = -2,
         x = 640 + 800,
         y = 240 + 1312,
         savegame_variable = "d2_boss",
       },
     },
-    [3] = {
+    [3] = { --TODO
       lowest_floor = -1,
       highest_floor = 1,
       boss = {
@@ -44,7 +44,7 @@ local function initialize_dungeon_features(game)
         savegame_variable = "d3_boss",
       },
     },
-    [4] = {
+    [4] = { --TODO
       lowest_floor = -1,
       highest_floor = 2,
       boss = {
@@ -54,7 +54,7 @@ local function initialize_dungeon_features(game)
         savegame_variable = "d4_boss",
       },
     },
-    [5] = {
+    [5] = { --TODO
       lowest_floor = -1,
       highest_floor = 0,
       boss = {
@@ -64,7 +64,7 @@ local function initialize_dungeon_features(game)
         savegame_variable = "d5_boss",
       },
     },
-    [6] = {
+    [6] = { --TODO
       lowest_floor = -1,
       highest_floor = 1,
       boss = {
@@ -74,7 +74,7 @@ local function initialize_dungeon_features(game)
         savegame_variable = "d6_boss",
       },
     },
-    [7] = {
+    [7] = { --TODO
       lowest_floor = -2,
       highest_floor = 0,
       boss = {
@@ -84,7 +84,7 @@ local function initialize_dungeon_features(game)
         savegame_variable = "d7_boss",
       },
     },
-    [8] = {
+    [8] = { --TODO
       lowest_floor = -1,
       highest_floor = 1,
       boss = {
@@ -94,33 +94,15 @@ local function initialize_dungeon_features(game)
         savegame_variable = "d8_boss",
       },
     },
-    [10] = {
+    [9] = { --TODO
       lowest_floor = -2,
       highest_floor = 2,
       boss = {
         floor = 0,
         x = 640 + 800,
         y = 480 + 600,
-        savegame_variable = "d10_boss",
+        savegame_variable = "d9_boss",
       },
-    },
-    [11] = {
-      lowest_floor = -1,
-      highest_floor = 0,
-      boss = {
-        floor = 0,
-        x = 640 + 800,
-        y = 480 + 360,
-        savegame_variable = "d11_boss",
-      },
-    },
-    [12] = {
-      lowest_floor = -2,
-      highest_floor = 2,
-      -- No boss on the minimap (the boss is on the roof).
-    },
-    [13] = {
-      -- TODO
     },
   }
 

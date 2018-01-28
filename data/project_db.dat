@@ -1,11 +1,14 @@
 map{ id = "caves/cave_store", description = "Cave Store" }
 map{ id = "dungeons/1/1f", description = "Dungeon 1 1F" }
+map{ id = "dungeons/1/b1", description = "Dungeon 1 B1" }
+map{ id = "dungeons/1/b2", description = "Dungeon 1 B2" }
 map{ id = "dungeons/1/store", description = "Dungeon 1 Store" }
 map{ id = "enemy_store", description = "Enemy Store" }
 map{ id = "house_store", description = "House Store" }
 map{ id = "intro", description = "Intro" }
 map{ id = "out/outside_store", description = "Outside Store" }
 map{ id = "shell village/tavern", description = "Tavern" }
+map{ id = "shell_village/tavern", description = "Tavern" }
 
 tileset{ id = "dungeon/blue", description = "Blue dungeon" }
 tileset{ id = "dungeon/brown", description = "Brown dungeon" }
@@ -191,6 +194,7 @@ sprite{ id = "entities/stone_black_skull", description = "Stone (black skull)" }
 sprite{ id = "entities/stone_white", description = "Stone (white)" }
 sprite{ id = "entities/stone_white_skull", description = "Stone (white skull)" }
 sprite{ id = "entities/stream", description = "Stream" }
+sprite{ id = "entities/switch_block", description = "Switch Block" }
 sprite{ id = "entities/switches/solid_switch", description = "Solid switch" }
 sprite{ id = "entities/switches/switch", description = "Floor switch" }
 sprite{ id = "entities/switches/switch_blue", description = "Floor switch (blue)" }
@@ -592,6 +596,7 @@ entity{ id = "hookable", description = "Hookable" }
 entity{ id = "ice_beam", description = "Ice beam" }
 entity{ id = "low_wall", description = "Low wall" }
 entity{ id = "statue_big", description = "Big statue" }
+entity{ id = "switch_block", description = "Switch block" }
 entity{ id = "torch", description = "Torch" }
 
 language{ id = "fr", description = "Français" }
@@ -601,4 +606,5 @@ font{ id = "green_digits", description = "green_digits" }
 font{ id = "minecraftia", description = "minecraftia" }
 font{ id = "minecraftia_mono", description = "minecraftia_mono" }
 font{ id = "white_digits", description = "white_digits" }
+
 

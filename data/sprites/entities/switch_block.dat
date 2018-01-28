@@ -1,0 +1,18 @@
+animation{
+  name = "raised",
+  src_image = "entities/miscellaneous.png",
+  frame_delay = 50,
+  frame_to_loop_on = 3,
+  directions = {
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "lowered",
+  src_image = "entities/miscellaneous.png",
+  frame_delay = 50,
+  frame_to_loop_on = 3,
+  directions = {
+    { x = 0, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+  },
+}

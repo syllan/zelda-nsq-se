@@ -5,6 +5,8 @@ properties{
   height = 1200,
   min_layer = -1,
   max_layer = 2,
+  world = "dungeon_1",
+  floor = 0,
   tileset = "dungeon/light_green",
   music = "DJungle",
 }
@@ -13783,6 +13785,15 @@ wall{
   stops_projectiles = true,
 }
 
+sensor{
+  name = "close_auto_door_k_sensor",
+  layer = 0,
+  x = 784,
+  y = 757,
+  width = 48,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = 784,
@@ -15559,18 +15570,8 @@ dynamic_tile{
 
 dynamic_tile{
   layer = 2,
-  x = 784,
-  y = 736,
-  pattern = "24",
-  width = 8,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  layer = 2,
-  x = 728,
-  y = 840,
+  x = 720,
+  y = 816,
   pattern = "24",
   width = 8,
   height = 16,
@@ -15580,7 +15581,7 @@ dynamic_tile{
 dynamic_tile{
   layer = 2,
   x = 864,
-  y = 840,
+  y = 816,
   pattern = "24",
   width = 8,
   height = 16,
@@ -15623,6 +15624,16 @@ dynamic_tile{
   y = 1072,
   pattern = "576",
   width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 2,
+  x = 784,
+  y = 736,
+  pattern = "24",
+  width = 8,
   height = 16,
   enabled_at_start = false,
 }
